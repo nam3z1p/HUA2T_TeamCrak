@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{39C2B935-49B0-4C99-A06D-603817F4134D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HUA2T_TeamCr%40k</RootNamespace>
+    <AssemblyName>HUA2T_TeamCr%40k</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ApplicationIcon>..\..\A3_logo.ico</ApplicationIcon>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\nam3z1p\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython" />
+    <Reference Include="IronPython.Modules" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Dynamic" />
+    <Reference Include="Microsoft.Scripting" />
+    <Reference Include="Microsoft.Scripting.Metadata" />
+    <Reference Include="stdlib">
+      <HintPath>bin\Debug\stdlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\RootingBypass.cs" />
+    <Compile Include="Form\RootingBypass.Designer.cs">
+      <DependentUpon>RootingBypass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Hook.cs" />
+    <Compile Include="Form\Hook.Designer.cs">
+      <DependentUpon>Hook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Auto_Tool.cs" />
+    <Compile Include="Form\Auto_Tool.Designer.cs">
+      <DependentUpon>Auto_Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dump.cs" />
+    <Compile Include="Form\Dump.Designer.cs">
+      <DependentUpon>Dump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Extract.cs" />
+    <Compile Include="Form\Extract.Designer.cs">
+      <DependentUpon>Extract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\HashCheck.cs" />
+    <Compile Include="Form\HashCheck.Designer.cs">
+      <DependentUpon>HashCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LoadingForm.cs" />
+    <Compile Include="Form\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MainForm.cs" />
+    <Compile Include="Form\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ScreenShot.cs" />
+    <Compile Include="Form\ScreenShot.Designer.cs">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\RootingBypass.resx">
+      <DependentUpon>RootingBypass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Auto_Tool.resx">
+      <DependentUpon>Auto_Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dump.resx">
+      <DependentUpon>Dump.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Extract.resx">
+      <DependentUpon>Extract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\HashCheck.resx">
+      <DependentUpon>HashCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Hook.resx">
+      <DependentUpon>Hook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ScreenShot.resx">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Form" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
